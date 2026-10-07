@@ -44,7 +44,7 @@ class Solution:
             weights.append(weight)
 
 
-        x = torch.randn( 1 , dimensions[i])
+        x = torch.randn( 1 , dimensions[0])
         std = []
         for weight in weights:
             x = x @ weight.T
